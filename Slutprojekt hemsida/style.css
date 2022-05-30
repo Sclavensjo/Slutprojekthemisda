@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'heebo', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background: white;
+
+}
+h2{
+    font-size: 5rem;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 5rem;
+    text-shadow: 0 0 5px rgb(52,140,199),0 0 5px rgb(52,140,199),
+    0 0 5px rgb(52,140,199),0 0 5px rgb(52,140,199),
+    0 0 5px rgb(52,140,199),0 0 5px rgb(52,140,199),
+    0 0 5px rgb(52,140,199),0 0 5px rgb(52,140,199);
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 1.5rem;
+    transform: translate(-50%,-50%) scale(6);
+    text-shadow: 0 0 5px rgb(52,140,199),0 0 5px rgb(52,140,199),
+    0 0 5px rgb(52,140,199),0 0 5px rgb(52,140,199),
+    0 0 5px rgb(52,140,199),0 0 5px rgb(52,140,199),
+    0 0 5px rgb(52,140,199),0 0 5px rgb(52,140,199);
+}
+
+.first-page{
+    height: 100vh;
+    background: rgb(21, 21, 21);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.home{
+    height: 100vh;
+}
+.first-page img {
+    height: 100%;
+}
+
+.second-page{
+    height: 100vh;
+    background: rgb(83, 83, 83);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.second-page img {
+    height: 100%;
+}
+
+.square{
+    width: 10rem;
+    height: 10rem;
+    background: rgb(52,140,199);
+    position: absolute;
+    top: 70%;
+    left:70%;
+}
+
+.slidning-text img{
+    width: 5rem;
+    height: 5rem;
+
+}
+.third-page{
+    height: 100vh;
+    background: rgb(21, 21, 21);
+    color: white;
+    justify-content: space-around;
+
+}
+.third-page h2{
+    left: 40rem;
+    padding-top: 8rem;
+    padding-left: 40rem;
+}
+.third-page p.aboutusss{
+    font-size: 20px;
+    text-align: center;
+}
+.team{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+    width: auto;
+    text-align: center;
+}
+.team .team_member{
+    background-color: rgb(83, 83, 83);
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: white;
+}
+.team .team_member h3{
+    color:rgb(52,140,199) ;
+    font-size: 26px;
+    margin-top: 50px;
+}
+.team .team_member p.role{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+.fourth-page{
+    height: 100vh;
+    background: rgb(83, 83, 83);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.container:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.content-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.left{
+    height: 100px;
+}
+.right h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.right h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(230,230,230,0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+.field:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30,85,250,0.47);
+}
